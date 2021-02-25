@@ -1,0 +1,102 @@
+body {
+    background-color: #f1f5f8;
+    padding-top: 50px;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: grid;
+    background: white;
+    height: 3rem;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.nav-center h4::after {
+    content: "|";
+    margin-left: 5px;
+    color:rgba(0, 0, 0, 0.2);
+}
+
+.nav-center h4 {
+    margin-top: 10px;
+    color: skyblue;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    justify-self: center;
+}
+
+.nav-links {
+    display: flex;
+}
+
+
+nav a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    color: skyblue;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blanchedalmond
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.container h2 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    width: 100vw;
+}
+
+.btn {
+    background-color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
